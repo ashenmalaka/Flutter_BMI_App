@@ -4,8 +4,8 @@ class Home extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     return HomeState();
-      }
-    
+      
+  }
 }
     
 class HomeState extends State<Home> {
@@ -17,6 +17,10 @@ class HomeState extends State<Home> {
         centerTitle: true,
         backgroundColor: Colors.pinkAccent,
       ),
+
+      backgroundColor: Colors.white70,
+
+      
     );
   }
 
