@@ -25,7 +25,7 @@ class HomeState extends State<Home> {
         child: new ListView(
           padding: const EdgeInsets.all(3.0),
           children: <Widget>[
-            new Image.asset("images/bmiapp.png",
+            new Image.asset("images/bmilogo.png",
               height: 133.0,
               width: 200.0,
             )
