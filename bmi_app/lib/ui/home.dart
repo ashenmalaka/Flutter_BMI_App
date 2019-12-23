@@ -20,7 +20,19 @@ class HomeState extends State<Home> {
 
       backgroundColor: Colors.white70,
 
-      
+      body: new Container(
+        alignment: Alignment.topCenter,
+        child: new ListView(
+          children: <Widget>[
+            new Image.asset("images/bmiapp.png",
+              height: 133.0,
+              width: 200.0,
+            )
+          ],
+        ),
+      ),
+
+
     );
   }
 
