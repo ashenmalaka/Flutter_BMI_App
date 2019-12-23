@@ -23,6 +23,7 @@ class HomeState extends State<Home> {
       body: new Container(
         alignment: Alignment.topCenter,
         child: new ListView(
+          padding: const EdgeInsets.all(3.0),
           children: <Widget>[
             new Image.asset("images/bmiapp.png",
               height: 133.0,
