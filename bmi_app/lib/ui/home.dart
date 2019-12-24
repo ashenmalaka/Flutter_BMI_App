@@ -18,7 +18,7 @@ class HomeState extends State<Home> {
         backgroundColor: Colors.pinkAccent,
       ),
 
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.white,
 
       body: new Container(
         alignment: Alignment.topCenter,
@@ -28,7 +28,9 @@ class HomeState extends State<Home> {
             new Image.asset("images/bmilogo.png",
               height: 133.0,
               width: 200.0,
-            )
+            ),
+
+
           ],
         ),
       ),
