@@ -11,6 +11,8 @@ class Home extends StatefulWidget {
 class HomeState extends State<Home> {
 
   final TextEditingController _ageController = new TextEditingController();
+  final TextEditingController _heightController = new TextEditingController();
+  final TextEditingController _weightController = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -44,9 +46,26 @@ class HomeState extends State<Home> {
                   new TextField(
                     controller: _ageController,
                     decoration: new InputDecoration(
-                      hintText: "Age",
+                      labelText: "Age",
                       icon: new Icon(Icons.person)
                     ),
+                  ),
+
+                  new TextField(
+                    controller: _heightController,
+                    decoration: new InputDecoration(
+                      labelText: "Height in feet",
+                      icon: new Icon(Icons.insert_chart)
+                    ),
+                  ),
+
+                  new TextField(
+                    controller: _weightController,
+                    decoration: new InputDecoration(
+                      labelText: "Weight in lb",
+                      icon: new Icon(Icons.line_weight)
+                    ),
+                    
                   ),
                 ],
               ),
