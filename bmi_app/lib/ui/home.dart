@@ -67,19 +67,23 @@ class HomeState extends State<Home> {
                     ),
                   ),
 
-                  new Padding(padding: EdgeInsets.all(3.0)),
+                  new Padding(padding: EdgeInsets.all(18.0)),
 
-                  new RaisedButton(
-                    onPressed: () {
+                  new Container(
+                    alignment: Alignment.center,
 
-                    },
-                    color: Colors.pinkAccent,
-                    child: new Text("Calculate",
+                    child: new RaisedButton(
+                      onPressed: () {
+
+                      },
+                      color: Colors.pinkAccent,
+                      child: new Text("Calculate",
                       style: new TextStyle(
                         color: Colors.white,
                         fontSize: 22.0
                       ),
-                   ),
+                     ),
+                   )
                   )
                 ],
               ),
