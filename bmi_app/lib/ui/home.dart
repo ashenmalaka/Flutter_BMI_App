@@ -65,8 +65,22 @@ class HomeState extends State<Home> {
                       labelText: "Weight in lb",
                       icon: new Icon(Icons.line_weight)
                     ),
-                    
                   ),
+
+                  new Padding(padding: EdgeInsets.all(3.0)),
+
+                  new RaisedButton(
+                    onPressed: () {
+
+                    },
+                    color: Colors.pinkAccent,
+                    child: new Text("Calculate",
+                      style: new TextStyle(
+                        color: Colors.white,
+                        fontSize: 22.0
+                      ),
+                   ),
+                  )
                 ],
               ),
             )
