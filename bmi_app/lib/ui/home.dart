@@ -9,6 +9,9 @@ class Home extends StatefulWidget {
 }
     
 class HomeState extends State<Home> {
+
+  final TextEditingController _ageController = new TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -38,11 +41,16 @@ class HomeState extends State<Home> {
               color: Colors.grey.shade300,
               child: new Column(
                 children: <Widget>[
-
+                  new TextField(
+                    controller: _ageController,
+                    decoration: new InputDecoration(
+                      hintText: "Age",
+                      icon: new Icon(Icons.person)
+                    ),
+                  ),
                 ],
               ),
             )
-
 
           ],
         ),
