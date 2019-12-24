@@ -30,6 +30,19 @@ class HomeState extends State<Home> {
               width: 200.0,
             ),
 
+            new Container(
+              margin: const EdgeInsets.all(3.0),
+              alignment: Alignment.center,
+              height: 300.0,
+              width: 380.0,
+              color: Colors.grey.shade300,
+              child: new Column(
+                children: <Widget>[
+
+                ],
+              ),
+            )
+
 
           ],
         ),
