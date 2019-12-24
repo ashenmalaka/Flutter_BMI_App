@@ -74,6 +74,7 @@ class HomeState extends State<Home> {
 
                     child: new RaisedButton(
                       onPressed: () {
+                        debugPrint("Button is clicked");
 
                       },
                       color: Colors.pinkAccent,
@@ -84,11 +85,14 @@ class HomeState extends State<Home> {
                       ),
                      ),
                    )
-                  )
+                  ),
+
+                  new Padding(padding: EdgeInsets.all(5.0)),
+                  
+                  
                 ],
               ),
             )
-
           ],
         ),
       ),
