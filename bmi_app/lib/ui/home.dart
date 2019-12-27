@@ -95,7 +95,8 @@ class HomeState extends State<Home> {
                       new Text("BMI: ",
                         style: new TextStyle(
                           color: Colors.blueAccent,
-                          fontWeight: FontWeight.w500
+                          fontWeight: FontWeight.w500,
+                          fontStyle: FontStyle.italic
                         ),
                       ),
                     ],
