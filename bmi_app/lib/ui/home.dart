@@ -105,7 +105,10 @@ class HomeState extends State<Home> {
 
                       new Text("Overweight: ",
                         style: new TextStyle(
-                          color: Colors.pinkAccent
+                          color: Colors.pinkAccent,
+                          fontWeight: FontWeight.w500,
+                          fontStyle: FontStyle.italic,
+                          fontSize: 25.0
                         ),
                       )
                     ],
