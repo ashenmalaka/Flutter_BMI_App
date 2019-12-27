@@ -94,7 +94,8 @@ class HomeState extends State<Home> {
                     children: <Widget>[
                       new Text("BMI: ",
                         style: new TextStyle(
-                          
+                          color: Colors.blueAccent,
+                          fontWeight: FontWeight.w500
                         ),
                       ),
                     ],
