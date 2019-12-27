@@ -100,6 +100,10 @@ class HomeState extends State<Home> {
                           fontSize: 20.0
                         ),
                       ),
+
+                      new Padding(padding: const EdgeInsets.all(3.0)),
+
+                      
                     ],
                   )
                 ],
