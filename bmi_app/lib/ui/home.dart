@@ -89,7 +89,16 @@ class HomeState extends State<Home> {
 
                   new Padding(padding: EdgeInsets.all(5.0)),
                   
-                  
+                  new Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      new Text("BMI: ",
+                        style: new TextStyle(
+                          
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
             )
