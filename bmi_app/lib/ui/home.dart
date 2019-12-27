@@ -103,7 +103,11 @@ class HomeState extends State<Home> {
 
                       new Padding(padding: const EdgeInsets.all(3.0)),
 
-                      
+                      new Text("Overweight: ",
+                        style: new TextStyle(
+                          color: Colors.pinkAccent
+                        ),
+                      )
                     ],
                   )
                 ],
