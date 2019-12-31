@@ -109,7 +109,7 @@ class HomeState extends State<Home> {
                           color: Colors.pinkAccent,
                           fontWeight: FontWeight.w500,
                           fontStyle: FontStyle.italic,
-                          fontSize: 25.0
+                          fontSize: 16.0
                         ),
                       )
                     ],
