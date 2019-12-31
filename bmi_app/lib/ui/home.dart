@@ -16,7 +16,7 @@ class HomeState extends State<Home> {
   double inches = 0.0;
   double result = 0.0;
 
-  void calculateBMI(){
+  void _calculateBMI(){
     setState(() {
       
       int age = int.parse(_ageController.text);
@@ -93,6 +93,7 @@ class HomeState extends State<Home> {
                     child: new RaisedButton(
                       onPressed: () {
                         debugPrint("Button is clicked");
+                        _calculateBMI();
 
                       },
                       color: Colors.pinkAccent,
