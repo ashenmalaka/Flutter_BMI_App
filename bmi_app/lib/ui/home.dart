@@ -14,6 +14,7 @@ class HomeState extends State<Home> {
   final TextEditingController _heightController = new TextEditingController();
   final TextEditingController _weightController = new TextEditingController();
   double inches = 0.0;
+  double result = 0.0;
 
   void calculateBMI(){
     setState(() {
@@ -23,7 +24,9 @@ class HomeState extends State<Home> {
       inches = height * 12;
       double weight = double.parse(_weightController.text);
 
-      
+      if((_ageController.text.isNotEmpty || age > 0) && ((_heightController.text.isNotEmpty || height > 0) && (_weightController.text.isNotEmpty || weight > 0))){
+        result = (weight / (inches * inches))*703;
+      }
     });
   }
 
