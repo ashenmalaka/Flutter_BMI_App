@@ -26,6 +26,8 @@ class HomeState extends State<Home> {
 
       if((_ageController.text.isNotEmpty || age > 0) && ((_heightController.text.isNotEmpty || height > 0) && (_weightController.text.isNotEmpty || weight > 0))){
         result = (weight / (inches * inches))*703;
+      }else{
+        result = 0.0;
       }
     });
   }
