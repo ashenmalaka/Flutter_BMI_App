@@ -127,7 +127,7 @@ class HomeState extends State<Home> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
 
-                      new Text("BMI: $result",
+                      new Text("$_finalResult",
                         style: new TextStyle(
                           color: Colors.blueAccent,
                           fontWeight: FontWeight.w500,
