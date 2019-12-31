@@ -15,6 +15,7 @@ class HomeState extends State<Home> {
   final TextEditingController _weightController = new TextEditingController();
   double inches = 0.0;
   double result = 0.0;
+  String _resultReading = "";
 
   void _calculateBMI(){
     setState(() {
@@ -26,6 +27,16 @@ class HomeState extends State<Home> {
 
       if((_ageController.text.isNotEmpty || age > 0) && ((_heightController.text.isNotEmpty || height > 0) && (_weightController.text.isNotEmpty || weight > 0))){
         result = (weight / (inches * inches))*703;
+
+        if(double.parse(result.toStringAsFixed(1)) < 18.5){
+          _resultReading = "UnderWeight";
+        }else if(double.parse(result.toStringAsFixed(1)) >= 18.5 && result < 25){
+          _resultReading = "Great Shape";
+        }else if(double.parse(result.toStringAsFixed(1)) >= 25.0 && result < 30){
+          _resultReading = "OverWeight";
+        }else if(double.parse(result.toStringAsFixed(1)) >= 30.0){
+          _resultReading = "Obese";
+        }
       }else{
         result = 0.0;
       }
