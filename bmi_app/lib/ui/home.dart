@@ -67,7 +67,7 @@ class HomeState extends State<Home> {
                     ),
                   ),
 
-                  new Padding(padding: EdgeInsets.all(10.0)),
+                  new Padding(padding: EdgeInsets.all(5.0)),
 
                   new Container(
                     alignment: Alignment.center,
@@ -87,7 +87,7 @@ class HomeState extends State<Home> {
                    ),
                   ),
 
-                  new Padding(padding: EdgeInsets.all(5.0)),
+                  new Padding(padding: EdgeInsets.all(3.0)),
                   
                   new Column(
                     mainAxisAlignment: MainAxisAlignment.center,
