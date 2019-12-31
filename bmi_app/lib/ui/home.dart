@@ -13,6 +13,19 @@ class HomeState extends State<Home> {
   final TextEditingController _ageController = new TextEditingController();
   final TextEditingController _heightController = new TextEditingController();
   final TextEditingController _weightController = new TextEditingController();
+  double inches = 0.0;
+
+  void calculateBMI(){
+    setState(() {
+      
+      int age = int.parse(_ageController.text);
+      double height = double.parse(_heightController.text);
+      inches = height * 12;
+      double weight = double.parse(_weightController.text);
+
+      
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
