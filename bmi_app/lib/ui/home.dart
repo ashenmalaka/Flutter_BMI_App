@@ -134,7 +134,7 @@ class HomeState extends State<Home> {
 
                       new Padding(padding: const EdgeInsets.all(3.0)),
 
-                      new Text("Overweight: ",
+                      new Text("$_resultReading",
                         style: new TextStyle(
                           color: Colors.pinkAccent,
                           fontWeight: FontWeight.w500,
