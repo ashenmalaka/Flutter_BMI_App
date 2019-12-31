@@ -93,7 +93,7 @@ class HomeState extends State<Home> {
                     child: new RaisedButton(
                       onPressed: () {
                         debugPrint("Button is clicked");
-                        _calculateBMI();
+                        _calculateBMI(); 
 
                       },
                       color: Colors.pinkAccent,
@@ -112,7 +112,7 @@ class HomeState extends State<Home> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
 
-                      new Text("BMI: ",
+                      new Text("BMI: $result",
                         style: new TextStyle(
                           color: Colors.blueAccent,
                           fontWeight: FontWeight.w500,
