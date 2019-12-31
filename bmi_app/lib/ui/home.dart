@@ -67,7 +67,7 @@ class HomeState extends State<Home> {
                     ),
                   ),
 
-                  new Padding(padding: EdgeInsets.all(18.0)),
+                  new Padding(padding: EdgeInsets.all(10.0)),
 
                   new Container(
                     alignment: Alignment.center,
@@ -84,7 +84,7 @@ class HomeState extends State<Home> {
                         fontSize: 22.0
                       ),
                      ),
-                   )
+                   ),
                   ),
 
                   new Padding(padding: EdgeInsets.all(5.0)),
@@ -92,6 +92,7 @@ class HomeState extends State<Home> {
                   new Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
+
                       new Text("BMI: ",
                         style: new TextStyle(
                           color: Colors.blueAccent,
