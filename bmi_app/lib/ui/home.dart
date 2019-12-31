@@ -17,6 +17,8 @@ class HomeState extends State<Home> {
   double result = 0.0;
   String _resultReading = "";
 
+  String _finalResult = "";
+
   void _calculateBMI(){
     setState(() {
       
@@ -40,6 +42,8 @@ class HomeState extends State<Home> {
       }else{
         result = 0.0;
       }
+
+      _finalResult = "Your BMI: ${result.toStringAsFixed(1)}";
     });
   }
 
